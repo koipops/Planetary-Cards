@@ -50,51 +50,99 @@ img.about {
 }
 
 :root {
-    --card-bg: #444;
     --text-color: white;
+    --bg-color: black;
+    --card-bg: #444;
     --hover-bg: #555;
     --grid-gap: 1rem;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: black;
+    background-color: var(--bg-color);
     color: var(--text-color);
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--grid-gap);
-    padding: 2rem;
+nav {
+    background: #222;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
     justify-content: center;
+    gap: 20px;
 }
 
-.sun-card, .card {
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: #FFD700;
+}
+
+.sun-card {
     background: var(--card-bg);
-    padding: 1rem;
-    border-radius: 10px;
+    padding: 1.5rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    margin: 20px auto;
     transition: transform 0.3s, background 0.3s;
 }
 
-.sun-card:hover, .card:hover {
+.sun-card:hover {
     background: var(--hover-bg);
     transform: scale(1.05);
 }
 
-.sun-circle, .planet-circle {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin: 0 auto 10px;
-}
-
 .sun-circle {
+    width: 100px;
+    height: 100px;
     background: yellow;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
-.card .planet-circle {
-    width: 60px;
-    height: 60px;
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--grid-gap);
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
 }
+
+.planet {
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.planet:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.mercury { background-color: #474747; }
+.venus { background-color: #474747; }
+.earth { background-color: #474747; }
+.mars { background-color: #474747; }
+.jupiter { background-color: #474747;}
+.saturn { background-color: #474747; }
+.uranus { background-color: #474747; }
+.neptune { background-color: #474747; }

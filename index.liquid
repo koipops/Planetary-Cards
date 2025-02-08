@@ -3,18 +3,13 @@ layout: layout.liquid
 title: Planetary Playing Cards
 ---
 
-<div class="grid-container">
-    <div class="sun-card">
-        <div class="sun-circle"></div>
-        <h2>Sun</h2>
-        <p>Type G2V</p>
-    </div>
-    {% include "planet-card.liquid" planet={ "name": "Neptune", "color": "Deep Navy" } %}
-    {% include "planet-card.liquid" planet={ "name": "Uranus", "color": "Royal Blue" } %}
-    {% include "planet-card.liquid" planet={ "name": "Saturn", "color": "Warm Gray" } %}
-    {% include "planet-card.liquid" planet={ "name": "Jupiter", "color": "Soft White" } %}
-    {% include "planet-card.liquid" planet={ "name": "Mars", "color": "Electric Teal" } %}
-    {% include "planet-card.liquid" planet={ "name": "Earth", "color": "Sunset Orange" } %}
-    {% include "planet-card.liquid" planet={ "name": "Venus", "color": "goldenrod" } %}
-    {% include "planet-card.liquid" planet={ "name": "Mercury", "color": "Muted Sand" } %}
-</div>
+<main>
+    <div class="planet mercury">Mercury - 0.39 AU</div>
+    <div class="planet venus">Venus - 0.72 AU</div>
+    <div class="planet earth">Earth - 1.00 AU</div>
+    <div class="planet mars">Mars - 1.52 AU</div>
+    <div class="planet jupiter">Jupiter - 5.20 AU</div>
+    <div class="planet saturn">Saturn - 9.58 AU</div>
+    <div class="planet uranus">Uranus - 19.18 AU</div>
+    <div class="planet neptune">Neptune - 30.07 AU</div>
+</main>
