@@ -10,7 +10,7 @@ nav {
     margin: 40px auto 0 auto;
     width: 250px;
     border-radius: 50px;
-    background: #212431;
+    background: #3f445a;
 }
 
 nav ul {
@@ -51,7 +51,7 @@ img.about {
 
 :root {
     --text-color: white;
-    --bg-color: black;
+    --bg-color: rgb(34, 33, 33);
     --card-bg: #444;
     --hover-bg: #555;
     --grid-gap: 1rem;
@@ -67,7 +67,7 @@ body {
 }
 
 nav {
-    background: #222;
+    background: #131212;
     padding: 15px;
 }
 
